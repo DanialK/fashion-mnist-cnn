@@ -1,7 +1,7 @@
-hion MNIST is a drop-in replacement for the very well known, machine learning hello world, MNIST dataset. It has same number of training and test examples and the images have the same 28x28 size and there are a total of 10 classes/labels, you can read more about the dataset here : [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist)
+Fashion MNIST is a drop-in replacement for the very well known, machine learning hello world, MNIST dataset. It has same number of training and test examples and the images have the same 28x28 size and there are a total of 10 classes/labels, you can read more about the dataset here : [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist)
 
 
-In this post we will be trying out a couple of different models to and compare their results:
+In this post we will be trying out different models and compare their results:
 
 ## List of models
 
@@ -21,13 +21,13 @@ To be consistent here, all the models are initially trained for 10 epochs and an
 Also, to avoid hot encoding the labels, I decided to use `sparse_categorical_crossentropy` when compiling the models.
 
 ## Observations
-All the models achieved a higher accuracy after using data augmentation. Almost always use data augmentation !!
+All the models achieved a higher accuracy after using data augmentation. Almost always use data augmentation!!
+
+VGG Like Model With Batchnorm performed the best and achieved a accuarcy of 94% using data augmentation.
 
 
 ## Fun Fact
 
 If you uncomment the code in **Drop-in Replacement you said?** section, you'll be able to run all the models on MNIST instead of Fashion-MNIST.
 It is much easier to get +99.5% results on MNIST. However, as you can see by running the models on both datasets, it gets relatively harder to squeeze accuracy on the Fashion-MNIST dataset. 
-
-
 
